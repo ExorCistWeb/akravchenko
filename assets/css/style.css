@@ -159,6 +159,7 @@
 }
 
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -185,9 +186,15 @@ button {
 }
 
 button.orange_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 8px 20px;
     gap: 10px;
@@ -238,16 +245,27 @@ p {
 }
 
 .flex_a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .flex_j {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .flex_f {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -297,6 +315,8 @@ header {
 
 .header .social_link li a {
     line-height: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -307,6 +327,8 @@ header {
 
 .header_bottom_content {
     gap: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -343,6 +365,7 @@ header {
 .main_box {
     background: #FFFFFF;
     border: 2px solid var(--orange);
+    -webkit-box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
     padding: 45px 48px;
@@ -351,8 +374,14 @@ header {
 }
 
 .main_box_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 16px;
 }
@@ -385,6 +414,8 @@ header {
 .green_btn {
     width: 100%;
     max-width: 488px;
+    background: url(../img/bg/green_btn.png), -webkit-gradient(linear, left top, left bottom, from(#70C953), to(#6CCC4D));
+    background: url(../img/bg/green_btn.png), -o-linear-gradient(top, #70C953 0%, #6CCC4D 100%);
     background: url(../img/bg/green_btn.png), linear-gradient(180deg, #70C953 0%, #6CCC4D 100%);
     border-radius: 16px;
     padding: 40px 36px 40px 30px;
@@ -430,21 +461,37 @@ header {
 
 .experience {
     margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .experience_box {
     background: #FFFFFF;
+    -webkit-box-shadow: 0px 2px 20px rgba(2, 96, 174, 0.15);
     box-shadow: 0px 2px 20px rgba(2, 96, 174, 0.15);
     border-radius: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
     padding: 26px 20px 36px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 calc(25% - 20px);
     flex: 1 1 calc(25% - 20px);
 }
 
@@ -491,7 +538,11 @@ header {
 }
 
 .newsSwiper .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 50px;
 }
@@ -512,11 +563,17 @@ header {
 .news_img img {
     width: 100%;
     height: 100%;
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
 .news_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 26px;
 }
@@ -528,7 +585,11 @@ header {
     line-height: 22px;
     text-transform: uppercase;
     color: var(--orange);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -543,7 +604,12 @@ header {
 
 .button_content {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
     gap: 12px;
     right: 100px;
@@ -554,8 +620,14 @@ header {
 
 .swiper-button-next,
 .swiper-button-prev {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background: #fff;
     border-radius: 100px;
